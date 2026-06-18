@@ -1,0 +1,148 @@
+{
+    "layer": "top",
+    "spacing": 0,
+    "height": 0,
+
+    "margin-top": 0,
+    "margin-right": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+
+    "modules-left": [
+        "sway/workspaces",
+        "niri/workspaces",
+        "mpris",
+        "sway/window",
+        "niri/window",
+        "cava",
+        "sway/mode"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "cpu_text",
+        "cpu",
+        "temperature",
+        "memory",
+        "battery",
+        "network",
+        "pulseaudio",
+        "privacy",
+        "tray",
+    ],
+
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "☎",
+        },
+    },
+    "niri/workspaces": {
+        "format": "{icon}",
+        "all-outputs": false,
+        "tooltip": false,
+        "format-icons": {
+            "vencord": "☎",
+        },
+    },
+    "sway/window": {
+        "format": "<span style=\"italic\">{title}</span>  ",
+        "icon": true,
+        "all-outputs": true,"all-outputs": true,
+        "tooltip": true,
+        "max-length": 28,
+        "tooltip-format": "{title}"
+    },
+    "niri/window": {
+        "format": "<span style=\"italic\">{title}</span>  ",
+        "icon": true,
+        "all-outputs": true,"all-outputs": true,
+        "tooltip": true,
+        "max-length": 28,
+        "tooltip-format": "{title}"
+    },
+    "mpris": {
+        "format": "/ᐠ • ˕ •マ ? {status_icon}<span style=\"italic\">{title} - {artist}</span>",
+        "max-length": 42,
+        "on-click-middle": "playerctl play-pause",
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸",
+            "stopped": "⏹",
+        },
+    },
+    "cava": {
+        "cava-config": "/home/maoe/.config/cava/config"
+        
+    },
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%a %d, %H.%M}",
+        "tooltip": true
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "temperature": {
+        "thermal-zone": 1,
+        "format": " {temperatureC}°C",
+        "interval": 2,
+    },
+
+    "memory": {
+        "format": "ram {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    },
+
+    "battery": {
+        "format": "bat {capacity}%",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi" : "wifi ദ്ദി/ᐠ｡‸｡ᐟ\\.ᐟ",
+        "format-ethernet": "wired ദ്ദി（• ⩊ •マ.ᐟ",
+        "format-disconnected" : "no network ᓚ₍ ^. .^₎??",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "vol {volume}% ᓚ₍⑅^..^₎♡",
+        "format-bluetooth": "vol {volume}% ᓚ₍⑅^..^₎♡ ",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+    "privacy": {
+        "icon-size": 16
+    }
+}

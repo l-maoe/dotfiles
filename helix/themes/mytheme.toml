@@ -1,0 +1,59 @@
+"underline.style" = "curl"
+
+"attribute" = "cyan"
+"type" = { fg = "red", modifiers = ["italic"] }
+"constructor" = "pink"
+"constant" = { fg = "blue", modifiers = ["bold"] }
+"constant.character" = "yellow"
+"string" = "yellow"
+"comment" = { fg = "green", modifiers = ["italic"]}
+"variable" = "cyan"
+"variable.builtin" = { fg = "red", modifiers = ["italic"] }
+"label" = "pink"
+"punctuation" = "purple"
+"punctuation.delimiter" = "white"
+"keyword" = "pink"
+"keyword.directive" = { fg = "gray", modifiers = ["underline", "italic"] }
+"operator" = "red"
+"function" = { fg = "hot-pink", modifiers = ["italic"] }
+"tag" = "pink"
+
+
+"ui.background" = {fg = "background", bg = "background"}
+"ui.background.separator" = "purpletwo"
+"ui.cursor" = {bg = "black"}
+"ui.cursor.normal" = {fg = "black", bg = "white"}
+"ui.cursor.insert" = {fg = "black", bg = "cyan"}
+"ui.cursor.select" = {fg = "black", bg = "yellow"}
+"ui.cursor.match" = "purpletwo"
+"ui.gutter" = "purple"
+"ui.linenr" = "gray"
+"ui.linenr.selected" = "light-blue"
+"ui.statusline" = { fg = "purple", bg = "black", modifiers = ["italic"] }
+"ui.popup" = { bg = "gray" }
+"ui.text" = "white"
+"ui.virtual.whitespace" = "white"
+"ui.menu" = { fg = "pink", bg = "background", modifiers = ["italic"] }
+"ui.menu.selected" = { fg = "light-blue", bg = "white", modifiers = ["bold", "italic"] }
+"ui.menu.scroll" = { fg = "pink", bg = "black" }
+"ui.selection" = { fg = "black", bg = "hot-pink" }
+warning = "yellow"
+error = { fg = "black", bg = "red", modifiers = ["bold", "underlined"]}
+info = { fg = "blue", modifiers = ["italic"] }
+hint = "green"
+
+[palette]
+white = "#ffffff"
+black = "#0a0a0a"
+gray = "#545454"
+green = "#00cc25"
+light-blue = "#58f4fc"
+blue = "#4958fc"
+purple = "#8e2dfc"
+purpletwo = "#c52dfc"
+pink = "#fc6fe2"
+hot-pink = "#f907cd"
+red = "#fc4649"
+yellow = "#fcf344"
+cyan = "#44fcd1"
+background = "#350038"

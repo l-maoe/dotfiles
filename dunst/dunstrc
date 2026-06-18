@@ -1,0 +1,54 @@
+[global]
+	follow = keyboard
+	width = (0, 400)
+	height = (0, 300)
+	notification_limit = 3
+	origin = top-right
+	offset = (9, 9)
+	progress_bar = true
+	progress_bar_horizontal_alignment = center
+	progress_bar_max_width = 400
+	progress_bar_corner_radius = 5
+	progress_bar_height = 10
+	indicate_hidden = true
+	frame_width = 5
+	gap_size = 2
+	font = Maple Mono 14
+	format = "<b>%s</b>\n%b\n<i>%a</i>"
+	vertical_alignment = top
+	icon_theme = "BeautyLine"
+	dmenu = "usr/bin/dmenu -fn "Maple Mono-21" -nb beige -nf '#ffafff' -sb beige -sf cyan -p dunst"
+	corner_radius = 20
+	corners = all
+	mouse_left_click = do_action,remove_current
+	mouse_middle_click = context,close_current
+	mouse_right_click = close_current
+	min_icon_size = 64
+	max_icon_size = 128
+	icon_position = right
+
+[urgency_low]
+	background = "#ffffd7e8"
+	foreground = "#010101e8"
+	highlight = "#6cdbdeff"
+	frame_color = "#ffafffff"
+	fullscreen = delay
+	timeout = 5
+	
+[urgency_normal]
+	background = "#ffffd7e8"
+	foreground = "#010101e8"
+	highlight = "#6cdbdeff"
+	frame_color = "#ffafffff"
+	fullscreen = show
+	timeout = 5
+	default_icon = "~/.config/dunst/default_icon.jpg"
+
+[urgency_critical]
+	background = "#6cdbdeff"
+	foreground = "#010101ff"
+	highlight = "#ffafffff"
+	frame_color = "#ffafff"
+	fullscreen = show
+	timeout = 0
+	default_icon = "~/.config/dunst/default_icon.jpg"
