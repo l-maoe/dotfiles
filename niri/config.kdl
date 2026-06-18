@@ -452,8 +452,8 @@ binds {
     // The allow-when-locked=true property makes them work even when the session is locked.
     // Using spawn-sh allows to pass multiple arguments together with the command.
     // "-l 1.0" limits the volume to 100%.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "~/.config/sway/increase_vol.sh"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "~/.config/sway/lower_vol.sh"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "~/.config/niri/increase_vol.sh"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "~/.config/niri/lower_vol.sh"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
